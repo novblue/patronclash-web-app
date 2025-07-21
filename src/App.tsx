@@ -72,7 +72,7 @@ function App() {
 
   const addToBetSlip = (game: Game, betType: string, odds: string) => {
     const bet = {
-      id: Math.random().toString(36).substr(2, 9),
+      id: Math.random().toString(36).substring(2, 9),
       game: `${game.awayTeam} vs ${game.homeTeam}`,
       betType,
       odds,
@@ -99,7 +99,7 @@ function App() {
                   <span className="text-black font-bold text-sm">F</span>
                 </div>
                 <span className="text-2xl font-bold text-green-400">
-                  FanDuel
+                  PatronClash
                 </span>
               </Link>
 
@@ -215,6 +215,7 @@ function App() {
                           {game.status === 'live' && (
                             <span className="flex items-center text-red-400 text-sm">
                               <span className="w-2 h-2 bg-red-400 rounded-full mr-2 animate-pulse"></span>
+                              {/* */}
                               LIVE
                             </span>
                           )}

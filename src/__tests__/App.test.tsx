@@ -2,10 +2,10 @@ import { render, screen } from '@testing-library/react';
 import App from '../App';
 
 // simple smoke test
-test('renders FanDuel header', () => {
+test('renders PatronClash header', () => {
   render(<App />);
-  const fanduelElement = screen.getByText(/FanDuel/i);
-  expect(fanduelElement).toBeInTheDocument();
+  const patronClashElement = screen.getByText(/PatronClash/i);
+  expect(patronClashElement).toBeInTheDocument();
 });
 
 test("renders today's games section", () => {
