@@ -96,7 +96,7 @@ function App() {
               {/* Logo */}
               <Link to="/" className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">F</span>
+                  <span className="text-black font-bold text-sm">PC</span>
                 </div>
                 <span className="text-2xl font-bold text-green-400">
                   PatronClash
